@@ -26,6 +26,8 @@ git config --global mergetool.bc3.cmd '"D:\1.software\BeyondCompare3\BComp.exe" 
 
 - git log //显示操作记录
 - git pull //拉去remote仓库
+- git push -u origin main   //推送main分支到remote仓库
+
 
 ## 其他记录
 
