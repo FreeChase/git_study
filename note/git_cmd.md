@@ -39,9 +39,9 @@ commit b0c5ffeb8554cf69d9997a3c3763122c9dfc0cc1 (HEAD -> main, origin/main, orig
 - commit b0c5ffeb8554cf69d9997a3c3763122c9dfc0cc1
     这是一串40位的十六进制哈希值，用于唯一标识这一提交。
 - `(HEAD -> main, origin/main, origin/HEAD)`
-    `HEAD -> main`：当前本地仓库的 HEAD 指针指向分支 main，表示你当前所在的分支是 main。
-    `origin/main`：表示远程仓库（名字通常为 origin）上的 main 分支正好指向这个提交。
-    `origin/HEAD`：远程仓库默认分支的引用（通常指向 main），也指向这个提交。
+    1. `HEAD -> main`：当前本地仓库的 HEAD 指针指向分支 main，表示你当前所在的分支是 main。
+    2. `origin/main`：表示远程仓库（名字通常为 origin）上的 main 分支正好指向这个提交。
+    3. `origin/HEAD`：远程仓库默认分支的引用（通常指向 main），也指向这个提交。
     这说明本地和远程仓库在 main 分支上都处于同一个提交状态。
 
 
