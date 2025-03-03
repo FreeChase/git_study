@@ -29,6 +29,26 @@ git config --global mergetool.bc3.cmd '"D:\1.software\BeyondCompare3\BComp.exe" 
 - git push -u origin main   //推送main分支到remote仓库
 - git branch    //查看分支信息
 
+## 查看Git 配置信息
+
+### 查看完整的 Git 配置信息
+
+```lua
+git config --list --global  # 显示全局 Git 配置
+git config --list --local   # 显示当前仓库的 Git 配置
+git config --list           # 显示所有（包括系统级、全局和本地）Git 配置
+
+```
+
+###  查看当前用户的 Git 配置信息
+```lua
+git config --global user.name  # 查看全局用户名
+git config --global user.email # 查看全局用户邮箱
+
+git config --local user.name   # 查看当前仓库的用户名
+git config --local user.email  # 查看当前仓库的用户邮箱
+
+```
 
 ## 其他记录
 
