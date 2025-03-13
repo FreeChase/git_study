@@ -7,7 +7,7 @@
 //配置 bc3 为比较工具
 git config --global diff.tool bc3
  
-git config --global difftool.bc3.cmd '"E:\Program Files\Beyond Compare\BComp.exe" "$LOCAL" "$REMOTE"'
+git config --global difftool.bc3.cmd '"E:\Program Files\Beyond Compare\BComp.exe" "\$LOCAL" "\$REMOTE"'
  
  
 git config --global merge.tool bc3
