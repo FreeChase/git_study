@@ -2,8 +2,9 @@
 # git命令记录
 
 
-## 比较工具
+## 比较管理
 
+### 配置比较工具
 //配置 bc3 为比较工具
 git config --global diff.tool bc3
  
@@ -14,6 +15,32 @@ git config --global merge.tool bc3
  
 git config --global mergetool.bc3.cmd '"D:\1.software\BeyondCompare3\BComp.exe" "$LOCAL" "$REMOTE"'
 
+### 比较命令
+
+#### 比较两个提交之间的差异
+```bash
+git diff <commit-id-1> <commit-id-2>
+git difftool <commit-id-1> <commit-id-2>    //使用difftool工具比较
+```
+
+#### 查看差异的统计信息
+```bash
+git diff <commit-id-1> <commit-id-2> --stat
+```
+
+#### 查看特定文件的差异
+```bash
+git diff <commit-id-1> <commit-id-2> -- <file-path>
+```
+#### 将差异输出到文件中
+```bash
+git diff <commit-id-1> <commit-id-2> > diff.patch
+
+```
+#### 应用补丁文件
+```bash
+git apply diff.patch
+```
 
 ## 远端管理
 
